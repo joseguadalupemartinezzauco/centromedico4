@@ -31,6 +31,26 @@ namespace centromedico2.Controllers
         {
             return View();
         }
+        public ActionResult AgregarMedico()
+        {
+            return View();
+        }
+        public ActionResult AgregarConsultorio()
+        {
+            return View();
+        }
+        public ActionResult AgregarEspecialidad()
+        {
+            return View();
+        }
+        public ActionResult AgregarPaciente()
+        {
+            return View();
+        }
+        public ActionResult AgregarUsuario()
+        {
+            return View();
+        }
         public ActionResult citas()
         {
             return View();
@@ -56,6 +76,10 @@ namespace centromedico2.Controllers
             return View();
         }
         public ActionResult usuarios()
+        {
+            return View();
+        }
+        public ActionResult Create()
         {
             return View();
         }

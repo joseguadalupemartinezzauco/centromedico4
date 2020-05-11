@@ -1,0 +1,70 @@
+﻿@model IEnumerable<centromedico2.Controllers.citass>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/Contact.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.citfecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cithora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citPaciente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citMedico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citConsultorio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citestado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citobservaciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.citfecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cithora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citPaciente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citMedico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citConsultorio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citestado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citobservaciones)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

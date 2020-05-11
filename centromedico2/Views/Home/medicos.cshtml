@@ -11,7 +11,8 @@
                 <div class="mensaje">
                     <h2>MEDICOS</h2>
                 </div>
-                <a href="agregarmedicos.php" class="agregar">Agregar Medico</a>
+              
+                <a class="agregar" @Html.ActionLink("Agregar Medico", "AgregarMedico", "Home")></a>
 
                 <table class="tabla">
                     <tr>
@@ -30,3 +31,6 @@
             </div>
         </article>
     </section>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>

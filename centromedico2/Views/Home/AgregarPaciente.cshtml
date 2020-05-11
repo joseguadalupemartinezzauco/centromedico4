@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "AgregarPaciente";
+}
+
+    <section class="main">
+        <article>
+            <div class="wrapp">
+                <div class="mensaje">
+                    <h2>Pacientes</h2>
+                </div>
+                <form action="" method="post">
+                    <h2>Agregar Pacientes</h2>
+                    <input required type="text" name="identificacion" placeholder="identificación:">
+                    <input required type="text" name="nombres" placeholder="Nombres:">
+                    <input required type="text" name="apellidos" placeholder="Apellidos:">
+                    <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento:">
+                    <select name="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                    <input type="submit" name="enviar" value="Agregar Paciente">
+                </form>
+                </div>
+        </article>
+    </section>
+
+

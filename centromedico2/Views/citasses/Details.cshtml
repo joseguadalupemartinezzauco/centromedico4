@@ -1,0 +1,75 @@
+﻿@model centromedico2.Controllers.citass
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Home/Contact.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>citass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.citfecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citfecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cithora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cithora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citMedico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citMedico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citConsultorio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citConsultorio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citestado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citestado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citobservaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citobservaciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

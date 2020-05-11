@@ -1,0 +1,81 @@
+﻿@model centromedico2.Controllers.citass
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Home/Contact.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>citass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.citfecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citfecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cithora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cithora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citMedico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citMedico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citConsultorio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citConsultorio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citestado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citestado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citobservaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citobservaciones)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
